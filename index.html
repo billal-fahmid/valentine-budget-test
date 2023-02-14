@@ -1,0 +1,78 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>valentine budget </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+
+</head>
+<body class="w-3/4 mx-auto" >
+    <header>
+        <h1 class="text-red-500 text-4xl font-mono font-bold text-center pt-4">Valentine Budget : <span id="your-budget">3000</span> $</h1>
+    </header>
+    <main>
+        <div class="main-container flex">
+            <div class="w-1/3 bg-white ">
+                <div class="gift w-3/4 mx-auto bg-white shadow-2xl shadow-blue-400 py-2 px-6  text-center ">
+                    <img class="w-2/4 mx-auto " src="./images/kitkat-chocolate-18g-India.jpg" alt="">
+                    <h2 class="text-xl text-black font-semibold">Kit Kat Chocolate</h2>
+
+                    <h2 class="text-2xl  text-black font-semibold " id="">Price : <span id="chocolate-price">200</span> </h2>
+                    <input type="text" id="kitkat-field" class="block mx-auto w-3/4 border-2 border-black rounded py-1 pl-4 " placeholder="Need Quentity" >
+
+                    <button id="btn-kitkat" class="bg-sky-600 hover:bg-sky-700 hover:text-white text-xl font-semibold py-2 px-4 rounded-md mt-2">Buy Now</button>
+                </div>
+
+                <div class="gift w-3/4 mx-auto bg-white shadow-2xl shadow-blue-400 py-2 px-6  text-center mt-3">
+                    <img class="w-2/4 mx-auto" src="./images/rose.jpg" alt="">
+                    <h2 class="text-xl text-black font-semibold">Rose</h2>
+                    <h2 class="text-2xl  text-black font-semibold">Price : <span id="rose-price">100</span> </h2>
+                    <input type="text" id="rose-field" class="block mx-auto w-3/4 border-2 border-black rounded py-1 pl-4 " placeholder="Need Quentity" >
+
+                    <button id="btn-rose" class="bg-sky-600 hover:bg-sky-700 hover:text-white text-xl font-semibold py-2 px-4 rounded-md mt-2">Buy Now</button>
+                </div>
+                <div class="gift w-3/4 mx-auto bg-white shadow-2xl shadow-blue-400 py-2 px-6  text-center mt-3">
+                    <img class="w-2/4 mx-auto" src="./images/diary.jpg" alt="">
+                    <h2 class="text-xl text-black font-semibold">Diary</h2>
+                    <h2 class="text-2xl  text-black font-semibold">Price : <span id="diary-price">100</span> </h2>
+                    <input type="text" id="diary-field" class="block mx-auto w-3/4 border-2 border-black rounded py-1 pl-4 " placeholder="Need Quentity" >
+                    <button id="btn-diary" class="bg-sky-600 hover:bg-sky-700 hover:text-white text-xl font-semibold py-2 px-4 rounded-md mt-2">Buy Now</button>
+                </div>
+               
+            </div>
+            <div class="w-full ">
+                <div class="mx-auto border-2 border-black text-center  p-6 mt-12">
+                  <h1 class="text-2xl text-black font-semibold border-b border-1 py-3 px-8">Chocolate : <span id="total-chocolate-price">00</span></h1>
+                  <h1 class="text-2xl text-black font-semibold border-b border-1 py-3 px-8">Rose : <span id="total-rose-price">00</span></h1>
+                  <h1 class="text-2xl text-black font-semibold border-b border-1 py-3 px-8">Diary : <span id="total-diary-price">00</span></h1>
+                  <h1 class="text-2xl text-black font-semibold border-b border-1 py-3 px-8">Total : <span id="total-price">00</span></h1>
+                  <div>
+                    <h1 class="text-2xl  font-semibold mt-8 bg-sky-400 text-white py-3 px-8">Use Promo code for 10% Discount</h1>
+                    <div class="mt-8 mb-8">
+                      <input type="text" id="copon-field" class=" mx-auto w-3/4 border-2 border-black rounded py-2 pl-4 " placeholder="Your Promo Code is- 101 " >
+                      <button id="btn-discount" class="bg-sky-600 hover:bg-sky-700 hover:text-white text-xl font-semibold py-2 px-4 rounded-md mt-2">Apply</button>
+                    </div>
+                    <h1 class="text-4xl text-black font-semibold py-3 px-8">All Cost : <span id="after-discount-total-price">00</span></h1>
+                  </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    <script src="./js/app.js"></script>
+</body>
+</html>
+
